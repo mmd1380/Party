@@ -511,7 +511,7 @@
       </v-expansion-panel>
       <v-expansion-panel>
         <v-expansion-panel-header style="text-align: right; direction: rtl">
-          <template v-slot:default="{open}"> 
+          <template v-slot:default="{open}">
             {{open}}
             <v-row>
               <v-col
@@ -573,7 +573,7 @@
           </template>
         </v-expansion-panel-header>
         <v-expansion-panel-content>
-
+          <AddressCard/>
         </v-expansion-panel-content>
       </v-expansion-panel>
 
@@ -582,9 +582,10 @@
 </template>
 
 <script>
+import AddressCard from "@/components/AddressCard";
 export default {
   name: "AppForm",
-
+  components: {AddressCard},
   data: () => ({
     date: null,
     files: [],

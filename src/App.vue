@@ -2,6 +2,7 @@
   <v-app>
     <v-container>
       <AppForm/>
+
     </v-container>
   </v-app>
 </template>
@@ -24,6 +25,6 @@
 <script>
 import AppForm from "@/components/AppForm";
 export default {
-  components: {AppForm}
+  components: { AppForm}
 }
 </script>

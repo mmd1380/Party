@@ -1,14 +1,23 @@
-<template id="app">
+<template>
   <v-app>
-    <v-container>
-      <AppForm/>
-
-    </v-container>
+    <AppNav />
+    <AppMain />
   </v-app>
 </template>
 
+<script>
+import AppMain from "./components/AppMain";
+import AppNav from "./components/AppHeader";
 
-<style>
+export default {
+  components: { AppMain, AppNav },
+}
+</script>
+
+<style lang="scss">
+html {
+  scroll-behavior: smooth;
+}
 @font-face {
   font-family: 'b nazanin';
   src: url('http://cdn.bayan.ir/blog/templates/shared/fonts/BNazanin.eot?view#iefix') format('embedded-opentype'),
@@ -19,12 +28,4 @@
 #app {
   font-family: 'b nazanin';
 }
-
-
 </style>
-<script>
-import AppForm from "@/components/AppForm";
-export default {
-  components: { AppForm}
-}
-</script>
